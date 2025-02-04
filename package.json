@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "start": "react-native start --reset-cache",
     "test": "jest",
-    "pod-install": "cd ./ios && bundle exec pod install --repo-update && cd ../"
+    "pod-install": "cd ./ios && bundle exec pod install --repo-update && cd ../",
+    "clean-ios": "cd ios && rm -rf ./pods && rm -rf ./Podfile.lock && rm -rf ./build && cd ../"
   },
   "dependencies": {
     "react": "18.3.1",
