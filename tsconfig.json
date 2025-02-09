@@ -1,3 +1,23 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "lib": ["dom", "esnext"],
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "allowImportingTsExtensions": false,
+    "target": "esnext",
+    "module": "esnext",
+    "rootDirs": ["src"],
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "useUnknownInCatchVariables": false,
+    "jsxImportSource": "@emotion/react"
+  },
+  "include": ["./src/**/*", "./src/types/*.d.ts"]
 }
